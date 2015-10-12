@@ -4,4 +4,9 @@ app.controller("CommentsCtrl", function($scope, $stateParams, PostsFactory, Util
     $scope.post.comments.push({ content: $scope.content });
     $scope.content = null;
   }
+
+  $scope.deleteComment = function(comment) {
+      var index = $scope.post.comments.indexOf(comment);
+      $scope.post.comments.splice(index, 1);
+    };
 });

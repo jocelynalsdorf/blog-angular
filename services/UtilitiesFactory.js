@@ -8,5 +8,6 @@ app.factory("UtilitiesFactory", function(){
       }
       return null;
     }
-  }
+    
+  };
 });
