@@ -5,4 +5,9 @@ app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $ur
     url: "",
     templateUrl: "partials/home.html"
   });
+
+  $stateProvider.state("posts", {
+    url: "/posts",
+    templateUrl: "partials/posts.html"
+  });
 }]);
