@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-6">
+    {{post.text}}
+  </div>
+  <div class="col-md-6">
+  <div class="row">
+     <div class="col-md-10 col-md-offset-1">
+     <form>
+     <label for="comment-input">Give um' some sympathy</label>
+       <input id="comment-input" type="text" ng-model="content" class="form-control" min-width="100%">
+       <button type="submit" ng-click="addComment()" class="btn btn-info">Submit</button>
+     </form>
+     </div>
+  </div>
+  <div class="row">
+     <div class="col-md-10 col-md-offset-1" ng-show="post.comments.length">
+     <ul class="comments-list">
+       <li ng-repeat="comment in post.comments">
+         {{comment.content}}
+       </li>
+     </ul>
+     </div>
+  </div>
+
+   
+  </div><! --end of 2nd col 6 div -->
+</div><!-- end of row 2 -->

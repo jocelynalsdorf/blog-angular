@@ -1,22 +1,26 @@
 <div class="row">
   <div class="col-md-8">
     <h2>Tell your sad story</h2>
-    <label for="title-iput">Give your bad day a title</label>
-    <input id="title-input" type="text" class="form-control bottom-margin-20" style="min-width: 100%" />
-    <textarea class="form-control post-input bottom-margin-20" style="min-width: 100%"></textarea>
-    <button type="submit" class="btn btn-info btn-block">Give me Some Sympathy!</button>
+    <form>
+      <label for="title-iput">Give your bad day a title</label>
+      <input ng-model="PostsFactory.title" id="title-input" type="text" class="form-control bottom-margin-20" style="min-width: 100%" />
+      <textarea ng-model="PostsFactory.text" class="form-control post-input bottom-margin-20" style="min-width: 100%"></textarea>
+      <button type="submit" ng-click="PostsFactory.addPost()" class="btn btn-info btn-block">Give me Some Sympathy!</button>
+    </form>
   </div>
   <div class="col-md-4">
     <div class="post-list-div" ng-show="posts.length">
       <h2>Misery Below ||</h2>
+        <div class="col-md-10 col-md-offset-1">
+          <ul class="post-list">
+            <li ng-repeat="post in posts">
+              <a ui-sref="posts.comments({postId: post.id})">{{post.title}}</a>
+            </li>
+          </ul>
+        </div>
+
     </div><!--end of ng-show div -->
   </div><!-- end of col-4 -->
 </div><!-- end of row 1 -->
-<div class="row">
-  <div class="col-md-6">
-    placeholder where post will go
-  </div>
-  <div class="col-md-6">
-    placeholder where comments will go
-  </div>
-</div><!-- end of row 2 -->
+<div ui-view> </div>
+

@@ -11,4 +11,11 @@ app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $ur
     templateUrl: "partials/posts.html",
     controller: "PostsCtrl"
   });
+
+  $stateProvider.state("posts.comments", {
+    url: "/:postId",
+    templateUrl: "partials/posts.comments.html",
+    controller: "CommentsCtrl"
+  });
+
 }]);
