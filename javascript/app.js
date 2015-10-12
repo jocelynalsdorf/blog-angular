@@ -8,6 +8,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 
   $stateProvider.state("posts", {
     url: "/posts",
-    templateUrl: "partials/posts.html"
+    templateUrl: "partials/posts.html",
+    controller: "PostsCtrl"
   });
 });
