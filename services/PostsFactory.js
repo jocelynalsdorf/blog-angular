@@ -3,7 +3,7 @@ app.factory('PostsFactory', function PostsFactory(){
   var factory = {};
   factory.posts = [];
   factory.addPost = function() {
-    factory.posts.push({title: factory.title, text: factory.text, if : factory.posts.length + 1, comments: [] });
+    factory.posts.push({title: factory.title, text: factory.text, id: factory.posts.length + 1, comments: [] });
     factory.title = null;
     factory.text = null;
   }
