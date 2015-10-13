@@ -3,7 +3,7 @@
 Jocelyn Alsdorf
 
 <h3>Description:</h3>
-This app allows a user to enter a bad day post, see all other bad day posts and comment on individual bad day posts. The goal of the app was to practice using grunt as a task runner to complie my js and sass.
+This app allows a user to enter a bad day post, see all other bad day posts and comment on individual bad day posts. The goal of the app was just to practice using grunt as a task runner to compile my JavaScript and SASS.
 
 <h2>Dependencies:</h2>
 
