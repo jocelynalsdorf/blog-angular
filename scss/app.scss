@@ -1,4 +1,20 @@
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
+
+
+
+
+@mixin alfa {
+  font-family: 'Alfa Slab One', cursive;
+}
+@mixin helvetica {
+  font-family: 'helvetica', san-serif;
+}
+
+.site-title {
+  @include alfa;
+  font-size: 65px;
+}
 
 .bottom-margin-20 {
   margin-bottom: 20px;
@@ -22,3 +38,15 @@ ul {
 
 }
 
+body { 
+
+  background:linear-gradient(
+      rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45)
+    ), url("../images/sad.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
