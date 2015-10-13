@@ -9,7 +9,8 @@
   </head>
   <body>
     <div class="container">
-      <div ui-view></div>
+      <div ui-view="header"></div>
+      <div ui-view="body"></div>
     </div>
 
 <!--script tags here -->
@@ -18,8 +19,10 @@
 <script src="javascript/app.annotated.js"></script>
 <script src="controllers/PostsController.js"></script>
 <script src="controllers/CommentsController.js"></script>
+<script src="controllers/HeadersController.js"></script>
 <script src="services/PostsFactory.js"></script>
 <script src="services/UtilitiesFactory.js"></script>
+
 
   </body>
   </body>
