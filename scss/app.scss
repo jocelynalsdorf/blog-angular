@@ -1,7 +1,7 @@
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
 
-
+$white: #fff;
 @mixin redAlfa {
    font-family: 'Alfa Slab One', cursive;
    color: #820f0f;
@@ -17,11 +17,18 @@
 .site-title {
   @include alfa;
   font-size: 68px;
+  color: $white;
 }
 
 .subtitle {
   @include alfa;
-  font-size: 52px;
+  font-size: 54px;
+  color: $white;
+}
+.medium-title {
+  color: $white;
+  font-size:24px;
+  @include helvetica;
 }
 .col-md-8.col-md-offset-2.text-center {
   margin-top: 250px;
@@ -52,10 +59,14 @@ ul {
   background-color: #820f0f;
   border-color:#820f0f;
   color: white;
-    &:hover {
+    &:hover,  &:active, &:active  {
       background-color: #e75428;
       border-color: #e75428;
     }
+
+}
+.btn-default {
+  color:#820f0f;
 }
 body { 
 
@@ -80,19 +91,28 @@ h4.form-title-big.text-center, .post-list-div {
   font-size: 22px;
   margin-top: -7px;
 }
-.add-post-div,  { 
+
+.add-post-div, .post-area { 
   padding:40px;
-  border:solid 1px red;
 }
+
 .post-list-div {
    padding-top: 40px;
    padding-right: 20px
 }
-
-.post-list-item-area  {
+.post-area-title {
+  font-size: 22px;
+}
+.post-area {
   @include helvetica;
   font-size:22px;
+
+}
+.post-list-item-area  {
+  @include helvetica;
+  font-size:20px;
   margin-top: 23px;
+    olor: black;
   
 }
 .all-posts-col {
@@ -100,6 +120,31 @@ h4.form-title-big.text-center, .post-list-div {
   padding-left: 20px;
 
 }
+
+ul.post-list, .comment-div {
+  @include helvetica;
+  font-size:20px;
+}
+
 hr {
   margin-top: 15px;
+}
+
+.col-md-8.post-area {
+    padding-top: 0px;
+}
+h4.comment-title {
+  @include redAlfa;
+  font-size: 22px;
+}
+.comment-div {
+  padding-top: 10px;
+  color: black;
+}
+a.delete-btn {
+  color: #e75428
+  font-size: 22px;
+}
+li a.ng-binding {
+  color: black;
 }

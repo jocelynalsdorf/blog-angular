@@ -1,28 +1,33 @@
 <div class="row">
-  <div class="col-md-8">
-  <div class="post-well">
+  <div class="col-md-8 post-area">
+  <h4 class='post-area-title text-center'>{{post.title}}</h4>
+    <div class="post-well">
       <p>{{post.text}}<p>
+      </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <div class="row">
-     <div class="col-md-10 col-md-offset-1">
-       <form>
-         <label for="comment-input">Give um' some sympathy</label>
-         <input id="comment-input" type="text" ng-model="content" class="form-control" min-width="100%">
-         <button type="submit" ng-click="addComment()" class="btn btn-info">Submit</button>
-       </form>
+    <div class="col-md-4">
+      <div class="row">
+       <div class="col-md-10 col-md-offset-1 ">
+        <h4 class="comment-title text-center">Comments</h4>
+         <form>
+           <div class="form-group">
+             <input id="comment-input" type="text" ng-model="content" class="form-control" min-width="100%" placeholder="Leave a comment">
+           </div>
+           <button type="submit" ng-click="addComment()" class="btn btn-info btn-block">Submit</button>
+         </form>
+       </div>
      </div>
-   </div>
-   <div class="row">
-     <div class="col-md-10 col-md-offset-1" ng-show="post.comments.length">
-       <ul class="comments-list">
-         <li ng-repeat="comment in post.comments">
-           {{comment.content}} <a class="btn" ng-click="deleteComment(comment)">Delete</a>
-         </li>
-       </ul>
+     <div class="row">
+       <div class="col-md-10 col-md-offset-1 comment-div" ng-show="post.comments.length">
+
+         <ul class="comments-list">
+           <li ng-repeat="comment in post.comments">
+             {{comment.content}} <a class="btn delete-btn" ng-click="deleteComment(comment)">Delete</a>
+           </li>
+         </ul>
+       </div>
      </div>
-   </div>
-   
- </div><! --end of 2nd col 6 div -->
+     
+
+   </div><! --end of 2nd col 6 div -->
 </div><!-- end of row 2 -->

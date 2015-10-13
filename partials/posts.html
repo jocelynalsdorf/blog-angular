@@ -17,7 +17,7 @@
           <ul class="post-list">
             <li ng-repeat="post in posts">
               <a ui-sref="posts.comments({postId: post.id})">{{post.title}}</a>
-              <a class="btn" ng-click="deletePost(post)">Delete</a>
+              <a class="btn delete-btn" ng-click="deletePost(post)">Delete</a>
             </li>
           </ul>
         </div>

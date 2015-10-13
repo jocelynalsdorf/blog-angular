@@ -5824,11 +5824,18 @@ button.close {
 
 .site-title {
   font-family: 'Alfa Slab One', cursive;
-  font-size: 68px; }
+  font-size: 68px;
+  color: #fff; }
 
 .subtitle {
   font-family: 'Alfa Slab One', cursive;
-  font-size: 52px; }
+  font-size: 54px;
+  color: #fff; }
+
+.medium-title {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'helvetica', san-serif; }
 
 .col-md-8.col-md-offset-2.text-center {
   margin-top: 250px; }
@@ -5854,9 +5861,12 @@ ul {
   background-color: #820f0f;
   border-color: #820f0f;
   color: white; }
-  .btn-info:hover {
+  .btn-info:hover, .btn-info:active, .btn-info:active {
     background-color: #e75428;
     border-color: #e75428; }
+
+.btn-default {
+  color: #820f0f; }
 
 body {
   background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../images/sad.jpg") no-repeat center center fixed;
@@ -5875,22 +5885,43 @@ h4.form-title-big.text-center, .post-list-div {
   font-size: 22px;
   margin-top: -7px; }
 
-.add-post-div {
-  padding: 40px;
-  border: solid 1px red; }
+.add-post-div, .post-area {
+  padding: 40px; }
 
 .post-list-div {
   padding-top: 40px;
   padding-right: 20px; }
 
+.post-area-title {
+  font-size: 22px; }
+
+.post-area {
+  font-family: 'helvetica', san-serif;
+  font-size: 22px; }
+
 .post-list-item-area {
   font-family: 'helvetica', san-serif;
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 23px; }
 
 .all-posts-col {
   padding-right: 31px;
   padding-left: 20px; }
 
+ul.post-list, .comment-div {
+  font-family: 'helvetica', san-serif;
+  font-size: 20px; }
+
 hr {
   margin-top: 15px; }
+
+.col-md-8.post-area {
+  padding-top: 0px; }
+
+h4.comment-title {
+  font-family: 'Alfa Slab One', cursive;
+  color: #820f0f;
+  font-size: 22px; }
+
+.comment-div {
+  padding-top: 10px; }
