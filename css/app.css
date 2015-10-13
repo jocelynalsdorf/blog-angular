@@ -5902,7 +5902,8 @@ h4.form-title-big.text-center, .post-list-div {
 .post-list-item-area {
   font-family: 'helvetica', san-serif;
   font-size: 20px;
-  margin-top: 23px; }
+  margin-top: 23px;
+  olor: black; }
 
 .all-posts-col {
   padding-right: 31px;
@@ -5924,4 +5925,12 @@ h4.comment-title {
   font-size: 22px; }
 
 .comment-div {
-  padding-top: 10px; }
+  padding-top: 10px;
+  color: black; }
+
+a.delete-btn {
+  color: #e75428;
+  font-size: 22px; }
+
+li a.ng-binding {
+  color: black; }
