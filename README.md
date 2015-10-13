@@ -17,7 +17,7 @@ Bootstrap Sass
 ---------
 ## Site home screenshot
 
-![Screenshot of site] (https://raw.githubusercontent.com/jocelynalsdorf/blog-angular/master/images/angualr-blog-screenshot.png)
+![Screenshot of site] (https://raw.githubusercontent.com/jocelynalsdorf/blog-angular/master/images/angular-blog-screenshot.png)
 
 
 <h2>Copyright</h2>
