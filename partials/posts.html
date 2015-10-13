@@ -1,17 +1,18 @@
-<div>
+<div class="fluid-container no-image-bg">
 <div class="row">
-  <div class="col-md-8">
-    <h2 class="post-form-header text-center">Tell your sad story</h2>
-    <form>
-      <label for="title-iput text-center">Give your bad day a title</label>
-      <input ng-model="PostsFactory.title" id="title-input" type="text" class="form-control bottom-margin-20" style="min-width: 100%" />
-      <textarea ng-model="PostsFactory.text" class="form-control post-input bottom-margin-20" style="min-width: 100%"></textarea>
+  <div class="col-md-8 add-post-div">
+  <h4 class="form-title-big text-center">Tell Us What Happened</h4>
+    <form class="add-post">
+      <input ng-model="PostsFactory.title" id="title-input" type="text" class="form-control bottom-margin-20" style="min-width: 100%" placeholder="Give Your Bad Day A Title"/>
+      <textarea ng-model="PostsFactory.text" class="form-control post-input bottom-margin-20" style="min-width: 100%" placeholder="Type in your story"></textarea>
       <button type="submit" ng-click="PostsFactory.addPost()" class="btn btn-info btn-block">Give me Some Sympathy!</button>
     </form>
   </div>
-  <div class="col-md-4">
-    <div class="post-list-div" ng-show="posts.length">
-      <h2>Misery Below <i class="glyphicon glyphicon-arrow-down"></i></h2>
+  <div class="col-md-4 all-posts-col">
+  <h2 class="post-list-div text-center">All Bad Day Posts</h2>
+  <hr>
+    <div class="" ng-show="posts.length">
+      
         <div class="col-md-10 col-md-offset-1">
           <ul class="post-list">
             <li ng-repeat="post in posts">

@@ -2,7 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
 
 
-
+@mixin redAlfa {
+   font-family: 'Alfa Slab One', cursive;
+   color: #820f0f;
+}
 
 @mixin alfa {
   font-family: 'Alfa Slab One', cursive;
@@ -13,7 +16,15 @@
 
 .site-title {
   @include alfa;
-  font-size: 65px;
+  font-size: 68px;
+}
+
+.subtitle {
+  @include alfa;
+  font-size: 52px;
+}
+.col-md-8.col-md-offset-2.text-center {
+  margin-top: 250px;
 }
 
 .bottom-margin-20 {
@@ -21,9 +32,9 @@
 }
 
 .post-input{ 
-  height:220px; 
-  min-height:220px;  
-  max-height:220px;
+  height:200px; 
+  min-height:200px;  
+  max-height:200px;
 }
 
 ul {
@@ -37,7 +48,15 @@ ul {
   max-height:100%;
 
 }
-
+.btn-info {
+  background-color: #820f0f;
+  border-color:#820f0f;
+  color: white;
+    &:hover {
+      background-color: #e75428;
+      border-color: #e75428;
+    }
+}
 body { 
 
   background:linear-gradient(
@@ -48,5 +67,39 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white;
+  
+}
+
+.no-image-bg {
+  background-color: white; 
+  min-height:700px;
+  
+}
+h4.form-title-big.text-center, .post-list-div {
+  @include redAlfa;
+  font-size: 22px;
+  margin-top: -7px;
+}
+.add-post-div,  { 
+  padding:40px;
+  border:solid 1px red;
+}
+.post-list-div {
+   padding-top: 40px;
+   padding-right: 20px
+}
+
+.post-list-item-area  {
+  @include helvetica;
+  font-size:22px;
+  margin-top: 23px;
+  
+}
+.all-posts-col {
+  padding-right: 31px;
+  padding-left: 20px;
+
+}
+hr {
+  margin-top: 15px;
 }
